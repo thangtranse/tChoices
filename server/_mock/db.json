@@ -1,37 +1,20 @@
 {
   "tags": [
     {
-      "id": "default",
-      "tags": [
-        {
-          "id": 1,
-          "tag": "test01"
-        },
-        {
-          "id": 2,
-          "tag": "test02"
-        },
-        {
-          "id": 3,
-          "tag": "demo01"
-        },
-        {
-          "id": 4,
-          "tag": "demo02"
-        },
-        {
-          "id": 841,
-          "tag": "minhthang"
-        },
-        {
-          "id": 678,
-          "tag": "demo-minhthang"
-        },
-        {
-          "id": 493,
-          "tag": "okey"
-        }
-      ]
+      "id": 1,
+      "tag": "test01"
+    },
+    {
+      "id": 2,
+      "title": "test02"
+    },
+    {
+      "id": 3,
+      "title": "demo01"
+    },
+    {
+      "id": 4,
+      "title": "demo02"
     }
   ],
   "tags_record_user": [
