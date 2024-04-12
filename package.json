@@ -1,0 +1,19 @@
+{
+  "name": "tchoices",
+  "version": "1.0.0",
+  "description": "Demo",
+  "main": "index.js",
+  "scripts": {
+    "server:dev": "cd server && npm run dev",
+    "web:dev": "cd web && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mui",
+    "nextjs",
+    "nestjs",
+    "typescript"
+  ],
+  "author": "thangtran.se@gmail.com",
+  "license": "ISC"
+}
