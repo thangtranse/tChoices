@@ -18,14 +18,6 @@
         {
           "id": 4,
           "tag": "demo02"
-        },
-        {
-          "id": 384,
-          "tag": "thang"
-        },
-        {
-          "id": 728,
-          "tag": "chao"
         }
       ]
     }
@@ -34,10 +26,7 @@
     {
       "id": "1",
       "tags": [
-        "test01",
-        "chao",
-        "demo01",
-        "thang"
+        "test01"
       ]
     }
   ]
