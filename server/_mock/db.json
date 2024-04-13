@@ -1,20 +1,44 @@
 {
-    "tags": [
+  "tags": [
+    {
+      "id": "default",
+      "tags": [
         {
-            "id": 1,
-            "tag": "test01"
+          "id": 1,
+          "tag": "test01"
         },
         {
-            "id": 2,
-            "title": "test02"
+          "id": 2,
+          "tag": "test02"
         },
         {
-            "id": 3,
-            "title": "demo01"
+          "id": 3,
+          "tag": "demo01"
         },
         {
-            "id": 4,
-            "title": "demo02"
+          "id": 4,
+          "tag": "demo02"
+        },
+        {
+          "id": 384,
+          "tag": "thang"
+        },
+        {
+          "id": 728,
+          "tag": "chao"
         }
-    ]
+      ]
+    }
+  ],
+  "tags_record_user": [
+    {
+      "id": "1",
+      "tags": [
+        "test01",
+        "chao",
+        "demo01",
+        "thang"
+      ]
+    }
+  ]
 }
