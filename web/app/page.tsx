@@ -40,7 +40,6 @@ async function fetchTags(
   return tags;
 }
 
-
 export default function Home() {
   const [tags, setTags] = useState<{ id: string; tag: string }[]>([]);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -87,6 +86,7 @@ export default function Home() {
   };
 
   const debouncedHandleSubmitTag = debounce(handleSubmitTag, 300);
+
 
   if (loading)
     return (
