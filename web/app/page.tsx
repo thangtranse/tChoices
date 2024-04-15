@@ -87,7 +87,6 @@ export default function Home() {
 
   const debouncedHandleSubmitTag = debounce(handleSubmitTag, 300);
 
-
   if (loading)
     return (
       <Container
