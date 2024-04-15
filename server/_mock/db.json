@@ -18,6 +18,18 @@
         {
           "id": 4,
           "tag": "demo02"
+        },
+        {
+          "id": 841,
+          "tag": "minhthang"
+        },
+        {
+          "id": 678,
+          "tag": "demo-minhthang"
+        },
+        {
+          "id": 493,
+          "tag": "okey"
         }
       ]
     }
@@ -26,7 +38,8 @@
     {
       "id": "1",
       "tags": [
-        "test01"
+        "test01",
+        "okey"
       ]
     }
   ]
