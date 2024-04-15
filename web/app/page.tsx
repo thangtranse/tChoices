@@ -3,6 +3,7 @@
 import { Container, Skeleton, TextField } from "@mui/material";
 import { useEffect, useState } from "react";
 import TagAutocomplete from "./components/TagAutocomplete";
+import { debounce } from './utils/debounce';
 
 const API_ENDPOINT = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
 const MOCK_USER_ID = 1;
@@ -57,7 +58,7 @@ export default function Home() {
       });
   }, []);
 
-  const handleSubmitTagChangedSelection = (_tags: string[]) => {
+  const handleSubmitTag = (_tags: string[]) => {
     // tìm tags mới thêm vào danh sách tags state
     const newTags = _tags
       .map((tag) => {
@@ -81,6 +82,8 @@ export default function Home() {
       })
       .catch((error) => console.error(error));
   };
+
+  const debouncedHandleSubmitTag = debounce(handleSubmitTag, 300);
 
   if (loading)
     return (
@@ -110,7 +113,7 @@ export default function Home() {
       <TagAutocomplete
         tags={tags}
         defaultValue={selectedTags}
-        handleTagSelection={handleSubmitTagChangedSelection}
+        handleTagSelection={debouncedHandleSubmitTag}
         renderInputCustom={(params) => (
           <TextField
             fullWidth
