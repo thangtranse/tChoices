@@ -28,16 +28,15 @@ const TagAutocomplete: React.FC<Props> = ({
       onChange={(event, value) => {
         handleTagSelection?.(value)
       }}
-      renderTags={(value: readonly string[], getTagProps) =>
-        value.map((label: string, index: number) => (
-          <div key={label}>
-            <Chip
-              variant="outlined"
-              label={label}
-              {...getTagProps({ index })}
-            />
-          </div>
-        ))
+      renderTags={(value: readonly string[], getTagProps) => value.map((label: string, index: number) => (
+        <div key={label} id={`tag-${index}`}>
+          <Chip
+            variant="outlined"
+            label={label}
+            {...getTagProps({ index })}
+          />
+        </div>
+      ))
       }
       renderInput={(params) =>
         typeof renderInputCustom === "function"
