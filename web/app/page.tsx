@@ -13,6 +13,7 @@ const MOCK_TAGS_ID = "default";
 const API_PATH_TAGS_RECORD_USER = `tags_record_user/${MOCK_USER_ID}`;
 const API_PATH_TAGS = `tags/${MOCK_TAGS_ID}`;
 
+//  * AN EXAMPLE OF BASIC FETCH, I WILL NOT USE CUSTOM HOOK TO HANDLE HERE.
 async function fetchTags(
   path: string = "",
   method: string = "GET",
