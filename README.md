@@ -1,8 +1,10 @@
 # tChoices
 The project demo showcases custom components, designed for educational purposes.
 
-
-![Demo](resources/demo-v01.gif)
+<video width="320" height="240" controls>
+  <source src="resources/demo02-420.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 ## Try Demo
 
