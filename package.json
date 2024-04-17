@@ -4,11 +4,18 @@
   "description": "Demo",
   "main": "index.js",
   "private": true,
-  "workspaces": ["web", "server"],
+  "workspaces": [
+    "web",
+    "server-json-server",
+    "server-hono"
+  ],
   "scripts": {
-    "server:dev": "cd server && npm run dev",
+    "server:dev": "cd server-json-server && npm run dev",
     "web:dev": "cd web && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=18.17.0"
   },
   "keywords": [
     "mui",

@@ -90,43 +90,23 @@ export default function Home() {
 
   if (loading)
     return (
-      <Container
-        sx={{
-          height: "100vh",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <Skeleton variant="rectangular" width={320} height={40} />
-      </Container>
+      <Skeleton variant="rectangular" width={320} height={40} />
     );
 
   return (
-    <Container
-      sx={{
-        height: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <TagAutocomplete
-        tags={tags}
-        defaultValue={selectedTags}
-        handleTagSelection={debouncedHandleSubmitTag}
-        renderInputCustom={(params) => (
-          <InputCompleteTextField
-            {...params}
-            fullWidth
-            label="Tags"
-            placeholder="Type a tag and press Enter"
-            style={{ minWidth: 250, maxWidth: 320}}
-          />
-        )}
-      />
-    </Container>
+    <TagAutocomplete
+      tags={tags}
+      defaultValue={selectedTags}
+      handleTagSelection={debouncedHandleSubmitTag}
+      renderInputCustom={(params) => (
+        <InputCompleteTextField
+          {...params}
+          fullWidth
+          label="Tags"
+          placeholder="Type a tag and press Enter"
+          style={{ minWidth: 250, maxWidth: 320 }}
+        />
+      )}
+    />
   );
 }

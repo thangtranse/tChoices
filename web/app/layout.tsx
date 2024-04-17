@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import ThemeRegistry from './components/ThemeRegistry'
+import { Container } from '@mui/material'
 
 export const metadata: Metadata = {
   title: 'Tag choices',
@@ -15,7 +16,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeRegistry>
-        <body>{children}</body>
+        <body>
+          <Container
+            sx={{
+              height: "100vh",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            {children}
+          </Container>
+        </body>
       </ThemeRegistry>
     </html>
   )
