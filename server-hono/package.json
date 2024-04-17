@@ -4,6 +4,7 @@
   "description": "Server mock",
   "main": "index.js",
   "scripts": {
+    "dev": "wrangler dev src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -11,5 +12,12 @@
   ],
   "author": "thangtran.se@gmail.com",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "@upstash/ratelimit": "^1.1.1",
+    "@upstash/redis": "^1.29.0",
+    "hono": "^4.2.4"
+  },
+  "devDependencies": {
+    "wrangler": "^3.50.0"
+  }
 }
